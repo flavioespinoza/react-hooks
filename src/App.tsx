@@ -55,14 +55,14 @@ const App: React.FC<{}> = () => {
           onChange={(e) => handleInputChange(index, e.target.value)}
           onKeyDown={(e) => handleBackspace(index, e)}
           ref={(thisInput) => (inputRefs.current[index] = thisInput)}
-          style={{ width: '30px', marginRight: '5px' }}
+          style={{ width: '30px', margin: '5px' }}
         />
       ))}
-      <div>
+      <div style={{ margin: '5px' }}>
         <button onClick={clearInputs}>Clear</button>
       </div>
-      <div>
-        <p>{authCode}</p>
+      <div style={{ margin: '5px' }}>
+        <span>{authCode}</span>
       </div>
     </>
   );
