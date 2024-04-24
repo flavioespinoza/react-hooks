@@ -26,8 +26,7 @@ const App: React.FC<{}> = () => {
     // Check if all inputs are filled
     if (!newCodes.includes('')) {
       // Combine all codes into one string and pass it to the parent component
-      const code = newCodes.join('');
-      setAuthCode(code);
+      setAuthCode(newCodes.join(''));
     }
   };
 
